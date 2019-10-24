@@ -1,0 +1,39 @@
+{
+    "name": "niladam/repository",
+    "description": "Laravel package (forked) to facilitate the repository design pattern functionality across multiple projects.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Kevin Pimentel",
+            "email": "kevin@kevinpimentel.com",
+            "homepage": "https://github.com/LazyElePHPant"
+        },
+        {
+            "name": "Calvin Carlos da Conceição Chiulele",
+            "email": "cchiulele@protonmail.com",
+            "homepage": "https://github.com/calvinchiulele"
+        },
+        {
+            "name": "Madalin Tache",
+            "email": "niladam@gmail.com",
+            "homepage": "https://github.com/niladam"
+        },
+    ],
+    "require": {},
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Niladam\\Repository\\":"src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Niladam\\Repository\\RepositoryServiceProvider"
+            ],
+            "aliases": {
+                "Repository": "Niladam\\Repository\\Facade"
+            }
+        }
+    }
+}
